@@ -69,8 +69,12 @@ const AdminUserPromotion = () => {
     setLoading(true);
     try {
       await promoteUser(adminId, selectedUser.userId, newRole);
-      Swal.fire('Success', 'User promotion completed.', 'success');
-      setDialogOpen(false);
+      Swal.fire(
+        'Success',
+        'User promotion completed. The new role leaves will be updated next year.',
+        'success'
+      );
+            setDialogOpen(false);
       const res = await getAllUsers();
       setUsers(res.data);
     } catch {
