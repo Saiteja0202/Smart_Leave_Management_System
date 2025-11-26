@@ -2,10 +2,7 @@
 
 > A secure, web-based full-stack platform designed to streamline and automate all organizational leave-related activities. SLMS enforces a structured approval workflow based on reporting hierarchy, ensuring compliance with company-specific leave policies and providing robust analytics for efficient resource planning.
 
-[Image of your main application screen or dashboard]
-
-  - **Place your Starting Screen image here.**
-
+![Starting Screen](assets/Starting_Screen.png)
 -----
 
 ## ✨ Key Features & Modules
@@ -164,17 +161,18 @@ Presenting the visual components and architectural design of the SLMS.
 
 ### 🏠 Starting Screen / Login
 
+![Starting Screen](assets/Starting_Screen.png)
+
 ### 📊 Admin Dashboard
 
-*(This dashboard offers full control, policy configuration, and analytics.)*
-
+![Admin Dashboard](assets/admin_dashboard.png)
 ### 🧑‍💻 User Dashboard
 
-*(This dashboard displays leave balance, history, and the application form.)*
+![User Dashboard](assets/user_dashboard.png)
 
 ### 🧱 Entity Relationship (ER) Diagram
 
-*(Depicting the database structure and relationships.)*
+![ER Diagram](assets/er_diagram.png)
 
 -----
 
