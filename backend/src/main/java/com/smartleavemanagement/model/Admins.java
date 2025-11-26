@@ -37,9 +37,8 @@ public class Admins {
     @Column(unique = true, nullable = false)
     private String email;
 
-    @NotNull(message = "Phone number is required")
-    @Min(value = 1000000000L, message = "Phone number must be at least 10 digits")
-    private Long phoneNumber;
+	@NotBlank(message = "Phone number is required")
+	private String phoneNumber;
 
     @NotBlank(message = "Address is required")
     private String address;
@@ -81,7 +80,7 @@ public class Admins {
 	public Admins(int adminId, @NotBlank(message = "First name is required") String firstName,
 			@NotBlank(message = "Last name is required") String lastName,
 			@Email(message = "Email should be valid") @NotBlank(message = "Email is required") String email,
-			@NotNull(message = "Phone number is required") @Min(value = 1000000000, message = "Phone number must be at least 10 digits") Long phoneNumber,
+			String phoneNumber,
 			@NotBlank(message = "Address is required") String address,
 			@NotNull(message = "Gender is required") Gender gender,
 			@NotBlank(message = "Username is required") String userName,
@@ -134,11 +133,11 @@ public class Admins {
 		this.email = email;
 	}
 
-	public Long getPhoneNumber() {
+	public String getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(Long phoneNumber) {
+	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
